@@ -10,7 +10,7 @@ app.get('/', function(req, res) {
     res.sendfile(__dirname + '/index.html');
 });
 
-app.use(express.static(__dirname + '/'));
+app.use(express.static(__dirname + '/public'));
 
 io.sockets.on('connection', function(socket) {
     socket.emit('news', {hello: 'world'});
