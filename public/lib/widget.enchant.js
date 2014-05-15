@@ -1193,11 +1193,11 @@
             this._content;
             this._rawContent;
             var bg1 = new enchant.widget.Ninepatch(minwidth, minheight);
-            bg1.src = core.assets['button.png'];
+            bg1.src = core.assets['../img/widget/button.png'];
             this.image = bg1;
 
             var bg2 = new enchant.widget.Ninepatch(minwidth, minheight);
-            bg2.src = core.assets['buttonPushed.png'];
+            bg2.src = core.assets['../img/widget/buttonPushed.png'];
             this.pushedimage = bg2;
 
             this.content = content;
@@ -1344,7 +1344,7 @@
             });
 
             var np = new enchant.widget.Ninepatch(this.width, this.height);
-            np.src = core.assets['dialog.png'];
+            np.src = core.assets['../img/widget/dialog.png'];
             this.background = np;
 
             this._content = content;
@@ -1400,7 +1400,7 @@
             });
 
             var np = new enchant.widget.Ninepatch(this.width, this.height);
-            np.src = core.assets['dialog.png'];
+            np.src = core.assets['../img/widget/dialog.png'];
             this.background = np;
 
             this._content = content;
@@ -2429,7 +2429,7 @@
                 this.rightIcon = rightIcon;
             }
             var np = new enchant.widget.Ninepatch(this.width, this.height);
-            np.src = core.assets['listItemBg.png'];
+            np.src = core.assets['../img/widget/listItemBg.png'];
             this.background = np;
         },
         /**
@@ -2528,7 +2528,7 @@
             }
             this.refresh();
             var np = new enchant.widget.Ninepatch(this.width, this.height);
-            np.src = core.assets['listItemBg.png'];
+            np.src = core.assets['../img/widget/listItemBg.png'];
             this.background = np;
         },
         /**
@@ -2945,7 +2945,7 @@
             this.refresh();
 
             var np = new enchant.widget.Ninepatch(this.width, this.height);
-            np.src = core.assets['navigationBar.png'];
+            np.src = core.assets['../img/widget/navigationBar.png'];
             this.background = np;
         },
         /**
@@ -3066,7 +3066,7 @@
                 var width = bg.width;
                 var height = bg.height;
                 var np = new enchant.widget.Ninepatch(width, height);
-                np.src = core.assets['iconMenuBg.png'];
+                np.src = core.assets['../img/widget/iconMenuBg.png'];
                 bg.image = np;
             });
         },
@@ -3135,7 +3135,7 @@
             addChild.call(this, child);
             this._icons.push(child);
             var np = new enchant.widget.Ninepatch(sp.width, sp.height);
-            np.src = core.assets['iconMenuBg.png'];
+            np.src = core.assets['../img/widget/iconMenuBg.png'];
             sp.image = np;
             this.refresh();
         },
@@ -3153,7 +3153,7 @@
                 insertBefore.call(this, child, target);
                 this._icons.splice(i, 0, child);
                 np = new enchant.widget.Ninepatch(sp.width, sp.height);
-                np.src = core.assets['iconMenuBg.png'];
+                np.src = core.assets['../img/widget/iconMenuBg.png'];
                 sp.image = np;
                 this.refresh();
             }
